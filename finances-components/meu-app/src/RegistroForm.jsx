@@ -21,24 +21,20 @@ const RegistroForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Nome:
-        <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
+        <input placeholder='nome completo...' type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
       </label>
       <br />
       <label>
-        E-mail:
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input placeholder='E-mail...' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </label>
       <br />
       <label>
-        Senha:
-        <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
+        <input placeholder='senha...' type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
       </label>
       <br />
       <label>
-        Confirmar
-         Senha:
         <input
+          placeholder='confirmar senha...'
           type="password"
           value={confirmarSenha}
           onChange={(e) => setConfirmarSenha(e.target.value)}

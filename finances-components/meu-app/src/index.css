@@ -2,36 +2,60 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #12b612;
 }
 
 .app{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .centro{
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 20vh;
   text-align: center;
-  background-color: #32cd32 ;
+  background-color: white ;
   height: 350px;
   width: 350px;
 }
 input {
   border-radius: 5px;
   margin: 10px;
+  border-style: inset;
+  border-color: #6c7c6c;
+  border-width: 1.5px;
+  width: 250px;
+  height: 20px;
+}
+input:hover {
+  border-radius: 5px;
+  margin: 10px;
+  border-style: inset;
+  border-color: #0ed40e;
+  border-width: 1.5px;
 }
 button{
   margin: 20px 20px 40px 20px;
   border-radius: 5px;
   cursor: pointer;
+  border: solid;
+  border-width: 1.5px;
+  background-color: #00ff00;
 }
 button:hover{
   margin: 20px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(156, 156, 156);
+  background-color: #55f855;
 }
 .h1{
+  color: #000000cb;
   padding: 25px;
+  font-family: 'Gabarito', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Young Serif', serif;
+  font-size: 25px;
 }
