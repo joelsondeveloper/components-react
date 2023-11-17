@@ -36,7 +36,8 @@ const RegistroForm = () => {
       </label>
       <br />
       <label>
-        Confirmar Senha:
+        Confirmar
+         Senha:
         <input
           type="password"
           value={confirmarSenha}
