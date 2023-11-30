@@ -1,0 +1,110 @@
+/* Estilos padrão para telas grandes */
+.nav {
+    background-color: white;
+    align-items: center;
+    height: 10vh;
+    display: flex;
+}
+
+.logo {
+    background-image: url('./logo1.png');
+    color: rgb(97, 47, 116);
+    background-size: cover;
+    width: 40px;
+    height: 30px;
+    border: none;
+    margin-left: 2vw;
+}
+.dropdownContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    height: 0;
+    width: auto;
+    overflow: hidden; /* Certifique-se de ocultar o conteúdo além da altura especificada */
+    transition: height 0.5s;
+    border-radius: 10px;
+}
+
+.linknav:hover .dropdownContent {
+    display: flex;
+    height: 20vh; /* Ou a altura desejada */
+}
+
+.linknav {
+    position: relative;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+p{
+    margin-top: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.baixo {
+    background-image: url('./baixo.jpg');
+    color: rgb(97, 47, 116);
+    background-size: cover;
+    width: 1.3vw;
+    height: 1.4vh;
+    border: none;
+    margin-top: 1.1vh;
+    margin-left: 1vw;
+}
+
+.cadastro {
+    margin-left: 20vw;
+    background-color: rgb(97, 47, 116);
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cadastro:hover {
+    background-color: rgb(76, 32, 94);
+}
+
+.logomenu {
+    margin-left: 87vw;
+    background-image: url(./menu.png);
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    border: none;
+    display: none;
+}
+
+.logomenu:hover {
+    background-color: rgb(76, 32, 94);
+}
+
+@media screen and (max-width: 1250px) {
+    .linknav,
+    .baixo,
+    .cadastro {
+        display: none;
+    }
+    .logomenu {
+        display: flex;
+    }
+    .logo {
+        height: 20px;
+        width: 30px;
+    }
+}
+
